@@ -1,0 +1,6 @@
+<xml>
+<plugins>
+    <plugin name="Device" value="org.apache.cordova.Device" />
+	<plugin name="Camera" value="org.apache.cordova.CameraLauncher" />
+</plugins>
+</xml>

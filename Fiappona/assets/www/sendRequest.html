@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<script>
+    $(document).click(function handleClick(e) {
+        $.ajax({
+                   url : "/store",
+                   type : "POST",
+                   data : ({"X" : e.clientX, "Y": e.clientY})
+        });
+    });
+</script>
+</head>
+<body>
+	<h1>Click anywhere on this page to record the click</h1>
+</body>
+</html>

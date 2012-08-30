@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Fiappona</title>
+	
+	<link rel="stylesheet" href="./css/jquery.mobile-1.1.1.css" />
+	<link rel="stylesheet" href="./css/jquery.mobile-1.1.1.min.css" />
+	
+	<script type="text/javascript" charset="utf-8" src="./js/cordova-2.0.0.js"></script>
+	<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="./js/jquery.mobile-1.1.1.js"></script>
+	<script type="text/javascript" charset="utf-8" src="./js/jquery.mobile-1.1.1.min.js"></script>
+	
+	<script type="text/javascript" charset="utf-8">
+	
+	    // Wait for Cordova to load
+	    //
+	    document.addEventListener("deviceready", onDeviceReady, false);
+	
+	    // Cordova is ready
+	    //
+	    function onDeviceReady() {
+	        var element = document.getElementById('deviceProperties');
+	
+	        element.innerHTML = 'Device Name: '     + device.name     + '<br />' + 
+	                            'Device Cordova: '  + device.cordova  + '<br />' + 
+	                            'Device Platform: ' + device.platform + '<br />' + 
+	                            'Device Version: '  + device.version  + '<br />';
+	                             
+	    }
+	
+	 </script>
+	 
+	 
+</head>
+
+<body>
+		
+	<div data-role="page" id="home">
+	
+		<div data-role="header">
+			<h1>Home</h1>
+			<a href="#settings" data-role="button">Settings</a>
+		</div>
+		
+		<div data-role="content">
+			<p id="deviceProperties">Loading device properties...</p>
+			
+				
+			<ul data-role="listview" data-theme="c">
+				<li><a href="#about">About Us</a></li>
+				<li><a href="#settings">Settings</a></li>
+			</ul>
+		</div>
+		
+		<div data-role="footer">
+			Footer...
+		</div>
+	</div>
+	
+	<div data-role="page" id="settings" data-theme="b">
+	
+		<div data-role="header">
+			<h1>Settings</h1>
+		</div>
+	
+		<div data-role="content">
+			Content...
+		</div>
+		
+		<div data-role="footer"/>
+		
+	</div>
+	
+		<div data-role="page" id="about" data-theme="b">
+	
+		<div data-role="header">
+			<h1>About</h1>
+		</div>
+	
+		<div data-role="content">
+			Content...by Ivano
+		</div>
+		
+		<div data-role="footer"/>
+		
+	</div>
+		
+</body>
+
+</html>
